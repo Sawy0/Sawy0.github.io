@@ -203,10 +203,10 @@ export default function AllProjects() {
                         <Col key={id}>
                           <StyledCard
                             image={image}
-                            name={name}
+                            name={name.replaceAll("-"," ")}
                             description={description}
                             url={html_url}
-                            demo={homepage}
+                            //demo={homepage}
                           />
                         </Col>
                       );
@@ -223,10 +223,10 @@ export default function AllProjects() {
                         <Col key={id}>
                           <StyledCard
                             image={image}
-                            name={name}
+                            name={name.replaceAll("-"," ")}
                             description={description}
                             url={html_url}
-                            demo={homepage}
+                            //demo={homepage}
                           />
                         </Col>
                       );

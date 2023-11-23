@@ -55,7 +55,7 @@ const StyledHero = styled.header`
 
   @media (prefers-reduced-motion: no-preference) {
     .hero-img {
-      animation: ${Spin} infinite 20s linear;
+       infinite 20s linear;
     }
   }
 
@@ -98,6 +98,7 @@ export default function Hero() {
               src={Logo}
               alt="React Logo"
               className="w-75 mx-auto hero-img"
+              fill="none"
             />
           </Col>
         </Row>

@@ -78,10 +78,10 @@ export default function Projects() {
                     <Col key={id}>
                       <StyledCard
                         image={image}
-                        name={name}
+                        name={name.replaceAll("-"," ")}
                         description={description}
                         url={html_url}
-                        demo={homepage}
+                        //demo={homepage}
                       />
                     </Col>
                   );

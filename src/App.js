@@ -29,7 +29,8 @@ const themes = {
     name: "light",
     color: "#45413C",
     background: "#F5F2E8",
-  },
+  }
+  ,
   dark: {
     name: "dark",
     color: "#FBFDFF",
@@ -46,7 +47,7 @@ export default function App() {
   React.useEffect(
     function () {
       const updateTheme = () =>
-        darkMode ? setTheme("dark") : setTheme("light");
+        darkMode ? setTheme("light") : setTheme("light");
       updateTheme();
       dispatch(fetchGitHubInfo());
       dispatch(fetchGitHubReops());

@@ -7,6 +7,11 @@ import { Icon } from "@iconify/react";
 // Projects Images (add your images to the images directory and import below)
 import Logo from "./images/logo.svg";
 
+import Tableau from "./images/Tableau.svg"
+
+import Pbi from "./images/PBI.svg"
+
+import Python from "./images/python.svg"
 // Hero Images (add your images to the /images directory with the same names)
 import HeroLight from "./images/hero-light.jpg";
 import HeroDark from "./images/hero-dark.jpg";
@@ -18,60 +23,61 @@ export { HeroDark as Dark };
  **************************************************************
   Add your GitHub username (string - "YourUsername") below.
 */
-export const githubUsername = "Your GitHub username here";
+export const githubUsername = "Sawy0";
 
 // Navbar Logo image
 export const navLogo = undefined;
 
 // Blog link icon - https://icon-sets.iconify.design/
-export const Blog = <Icon icon="ph:link-bold" />;
+export const Blog = <Icon icon="skill-icons:linkedin" />;
+
 
 /* About Me
  **************************************************************
   Add a second paragraph for the about me section.
 */
 export const moreInfo =
-  "I enjoy learning about technology and helping others use it to improve their lives and be more productive. I built this site with React, React Bootstrap, Redux, and the GitHub REST API.";
+  "Experienced data analyst specializing in telecommunications and e-commerce with a robust tech stack including Domo, Python, Excel, PowerBI, Tableau, SQL, and more. Proven track record in optimizing network performance, improving user experience, and driving data-driven strategies. Proficient in SQL for efficient data manipulation and skilled in creating interactive dashboards with tools like PowerBI and Tableau. Collaborative and results-driven, committed to contributing effectively to diverse industries through continuous learning and impactful insights.";
 
 /* Skills
- ************************************************************** 
+ **************************************************************
   Add or remove skills in the SAME format below, choose icons here - https://icon-sets.iconify.design/
 */
 export const skillData = [
   {
     id: 1,
-    skill: <Icon icon="mdi:language-html5" className="display-4" />,
-    name: "HTML5",
+    skill: <Icon icon="logos:python" className="display-4" />,
+    name: "Python",
   },
   {
     id: 2,
-    skill: <Icon icon="ion:logo-css3" className="display-4" />,
-    name: "CSS3",
+    skill: <img src="https://web-assets.domo.com/miyagi/images/logo/brand/color/logo-brand-domo-color.svg" className="display-4" style={{ height: 74, width: 216 }} />,
+    name: "Domo",
   },
   {
     id: 3,
-    skill: <Icon icon="fa6-brands:js" className="display-4" />,
-    name: "JavaScript",
+    skill: <Icon icon="logos:postgresql" className="display-4" />,
+    name: "PostgreSQL",
   },
   {
     id: 4,
-    skill: <Icon icon="ri:bootstrap-fill" className="display-4" />,
-    name: "BootStrap",
+    skill: <Icon icon="logos:microsoft-power-bi" className="display-4" />,
+    name: "PowerBI",
   },
   {
     id: 5,
-    skill: <Icon icon="mdi:react" className="display-4" />,
-    name: "React",
+    skill: <Icon icon="logos:tableau" className="display-4" />,
+    name: "tableau",
   },
   {
     id: 6,
-    skill: <Icon icon="file-icons:styledcomponents" className="display-4" />,
-    name: "Styled Components",
+    skill: <Icon icon="logos:looker" className="display-4" />,
+    name: "Google Looker",
   },
   {
     id: 7,
-    skill: <Icon icon="akar-icons:redux-fill" className="display-4" />,
-    name: "Redux",
+    skill: <Icon icon="logos:flask" className="display-4" />,
+    name: "Flask",
   },
   {
     id: 8,
@@ -89,22 +95,30 @@ export const skillData = [
 export const resume = null;
 
 /* Projects
- ************************************************************** 
+ **************************************************************
   List the repo names (string - "your-repo-name") you want to include (they will be sorted alphabetically). If empty, only the first 3 will be included.
 */
-export const filteredProjects = ["example-1", "example-2", "example-3"];
+export const filteredProjects = ["Tableau-Dashboards", "PowerBi-Dashboards", "We-Rate-Dogs-Analysis-Project"];
 
 // Replace the defualt GitHub image for matching repos below (images imported above - lines 7-8)
 export const projectCardImages = [
   {
-    name: "example-1",
-    image: Logo,
+    name: "Tableau-Dashboards",
+    image: Tableau
   },
+  {
+    name : "PowerBi-Dashboards",
+    image: Pbi
+  },
+  {
+    name: "We-Rate-Dogs-Analysis-Project",
+    image: Python
+  }
 ];
 
 /* Contact Info
- ************************************************************** 
+ **************************************************************
   Add your formspree endpoint below.
   https://formspree.io/
 */
-export const formspreeUrl = "https://formspree.io/f/YourEndpoint";
+export const formspreeUrl = "https://formspree.io/f/mdorvqyw";

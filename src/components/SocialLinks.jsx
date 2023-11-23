@@ -6,6 +6,8 @@ import styled from "styled-components";
 import { Blog } from "../data";
 // Icons
 import { Icon } from '@iconify/react';
+// Icons
+import { Freelance } from "../data";
 
 const StyledSocialLinks = styled.div`
   a {
@@ -14,7 +16,7 @@ const StyledSocialLinks = styled.div`
 `;
 
 export default function SocialLinks() {
-  const { blog, html_url } = useSelector(selectData);
+  const { blog, html_url,freelance } = useSelector(selectData);
 
   return (
     <StyledSocialLinks>
@@ -30,6 +32,13 @@ export default function SocialLinks() {
           {Blog}
         </a>
       )}
+      <a
+        href={"https://upwork.com/freelancers/ahmedelsawy26"}
+        aria-label="Visit My Upwork Profile"
+        className="link-icons"
+      >
+        <Icon icon="bxl:upwork" color="green"/>
+      </a>
     </StyledSocialLinks>
   );
 }

@@ -9,7 +9,7 @@ import { Icon } from "@iconify/react";
 // Components
 import { Container, Nav, Navbar } from "react-bootstrap";
 // Images
-import Logo from "./defaultNavLogo.svg";
+import Logo from "../images/logo.svg";
 
 // #region styled-components
 const StyledSwitch = styled.label`
@@ -48,7 +48,9 @@ const FixedNavSpacer = styled.div`
 function ThemeToggle() {
   const { theme, toggleTheme, closeExpanded } = useAppContext();
 
-  return (
+// Switch removed for theme optimization
+
+  return (/*
     <StyledSwitch onClick={closeExpanded}>
       <input
         type="checkbox"
@@ -63,7 +65,7 @@ function ThemeToggle() {
         )}
       </div>
     </StyledSwitch>
-  );
+  */ null);
 }
 // #endregion
 
